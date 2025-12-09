@@ -1,0 +1,42 @@
+ /* O CSS será inserido aqui */
+        .grid-container {
+            /* 1. Ativa o Grid */
+            display: grid;
+            
+            /* 2. Define as colunas: 2 colunas de largura igual (1 fração cada) */
+            grid-template-columns: 1fr 1fr;
+            
+            /* 3. Define as linhas: 100px para a primeira linha e 200px para as demais */
+            grid-template-rows: 100px 200px 200px;
+            
+            /* 4. Espaço entre as linhas e colunas (gutter) */
+            gap: 15px; 
+            
+            /* Estilos visuais do contêiner */
+            border: 3px solid #b30056;
+            background-color: #fff0f5;
+            width: 80%;
+            margin: 20px auto;
+            padding: 15px;
+        }
+
+        .box {
+            /* O Grid gerencia o tamanho e posicionamento, então 'width' não é necessário aqui */
+            background-color: #47ff63;
+            color: black;
+            font-size: 1.2em;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        /* Os itens são automaticamente colocados em ordem, mas podemos mudá-los */
+        .box-special {
+            /* Faz com que esta caixa ocupe 2 colunas */
+            grid-column: span 2;
+            background-color: #007bff;
+            color: white;
+            height: 100px; /* Definindo a altura da linha */
+        }

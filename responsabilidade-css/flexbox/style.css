@@ -1,0 +1,43 @@
+ /* O CSS será inserido aqui para um exemplo rápido */
+.flex-container {
+    /* 1. Ativa o Flexbox */
+    display: flex;
+    
+    /* 2. Define como os itens serão dispostos (em uma linha) */
+    flex-direction: row; 
+    
+    /* 3. Distribui o espaço extra entre os itens e nas extremidades */
+    justify-content: space-around; 
+    
+    /* 4. Centraliza os itens verticalmente dentro do contêiner */
+    align-items: center; 
+    
+    /* Altura de referência para ver a centralização vertical */
+    height: 300px; 
+    
+    /* Estilos visuais do contêiner */
+    border: 3px solid #0056b3;
+    background-color: #f0f8ff;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.box {
+    /* Os itens filhos não precisam de 'float' ou 'display: inline-block' */
+    width: 100px;
+    height: 100px;
+    background-color: #ff6347;
+    color: white;
+    font-size: 1.2em;
+    display: flex; /* Flexbox em um item filho para centralizar texto */
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Destaque para a caixa 2 para demonstrar o alinhamento */
+.box-2 {
+    height: 150px; /* Tornando a caixa 2 mais alta */
+    background-color: #28a745;
+}

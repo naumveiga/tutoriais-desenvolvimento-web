@@ -1,0 +1,185 @@
+/* -------- RESET -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -------- BODY -------- */
+body {
+    background: #f3f6fb;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* -------- HEADER -------- */
+header {
+    background: linear-gradient(135deg, #005bea, #00c6fb);
+    padding: 25px 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* -------- MAIN -------- */
+main {
+    flex: 1;
+    padding: 30px;
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+}
+
+/* -------- SECTION -------- */
+section h2 {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+}
+
+section p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+/* -------- INTERFACE DO CONTADOR -------- */
+#contador-interface {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    animation: fadeIn 0.5s ease;
+}
+
+#contador-interface h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* -------- MOSTRADORES -------- */
+#mostrador,
+#incremento {
+    font-size: 2.4rem;
+    background: #eef4ff;
+    border: 2px solid #c7d7ff;
+    color: #005bea;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+
+/* -------- INPUT E BOTÃO DE DEFINIR -------- */
+#entrada_valor_incremento {
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    width: 120px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+#entrada_valor_incremento:focus {
+    outline: none;
+    border-color: #005bea;
+}
+
+#setar_valor_incremento {
+    padding: 8px 15px;
+    background: #005bea;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#setar_valor_incremento:hover {
+    background: #004bbd;
+}
+
+/* -------- BOTÕES DE CONTROLE -------- */
+.controles {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.controles button {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    background: #00c6fb;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+
+#botao_subtrai {
+    background: #ff4d4d;
+}
+
+#botao_subtrai:hover {
+    background: #d60000;
+}
+
+#botao_soma {
+    background: #4caf50;
+}
+
+#botao_soma:hover {
+    background: #2d7d32;
+}
+
+.controles button:hover {
+    transform: scale(1.1);
+}
+
+/* -------- FOOTER -------- */
+footer {
+    background: #1e1e1e;
+    color: #eee;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+/* -------- ANIMAÇÃO -------- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* -------- RESPONSIVIDADE -------- */
+@media (max-width: 600px) {
+    #mostrador, 
+    #incremento {
+        font-size: 2rem;
+    }
+
+    .controles button {
+        width: 60px;
+        height: 60px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+}
