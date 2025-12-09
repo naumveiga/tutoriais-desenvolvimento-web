@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script>
+        function myFunction() {
+            if (document.getElementById("demo").innerHTML == "Teste."){
+                document.getElementById("demo").innerHTML = "Paragraph changed.";
+                document.getElementById("demo").style.backgroundColor = '#ffff00';
+            }else{
+                document.getElementById("demo").innerHTML = "Teste.";
+                document.getElementById("demo").style.backgroundColor = '#00ffff';
+            }
+        }
+    </script>
+    <style type="text/css">
+        h2 { color: blue; }
+        h1 { color: yellowgreen; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de documento HTML</title>
+</head>
+<body>
+    <h1>Teste de <b>HTML</b></h1>
+    <h2>Esse é o título 2, nnn <b>nnn</b></h2>
+    Teste de texto simples. <br>
+    <i  style = "color: red; text-align: center;">Itálico</i><br>
+    <b>Negrito</b><br>
+    &lt;br&gt;<br>
+    <s>Riscado</s><br>
+    <u>Sublinhado</u>
+    <p id="demo">Teste.</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+</body>
+</html>
